@@ -57,8 +57,8 @@
                 src="assets/img/profile-img.jpg"
                 alt="Profile"
                 class="rounded-circle"
-              />
-            </a>
+              /> </a
+            ><!-- End Profile Iamge Icon -->
 
             <ul
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
@@ -83,9 +83,12 @@
                 </a>
               </li>
             </ul>
+            <!-- End Profile Dropdown Items -->
           </li>
+          <!-- End Profile Nav -->
         </ul>
       </nav>
+      <!-- End Icons Navigation -->
     </header>
     <!-- End Header -->
 
@@ -98,17 +101,22 @@
             <span>Dashboard</span>
           </a>
         </li>
+        <!-- End Dashboard Nav -->
 
         <li class="nav-item">
-          <a class="nav-link" href="Manage_companies.html">
+          <a class="nav-link collapsed" href="Manage_companies.html">
             <i class="bi bi-people"></i><span>Manage user</span>
           </a>
+
+          <!-- End Components Nav -->
         </li>
 
         <li class="nav-item">
           <a class="nav-link collapsed" href="Manage_Companies.html">
             <i class="bi bi-people"></i><span>Manage Companies</span>
           </a>
+
+          <!-- End Tables Nav -->
         </li>
 
         <li class="nav-item">
@@ -116,14 +124,13 @@
             <i class="bi bi-people"></i><span>Manage Employee</span>
           </a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link collapsed" href="">
+          <a class="nav-link collapsed" href="Manage_Clients.html">
             <i class="bi-qr-code"></i><span>Manage Clients</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" href="Manage_QR-Codes.html">
+          <a class="nav-link" href="Manage QR_codes.html">
             <i class="bi-qr-code"></i><span> Manage QR-Codes</span>
           </a>
         </li>
@@ -146,139 +153,135 @@
     </aside>
     <!-- End Sidebar-->
     <main id="main" class="main">
+      <div class="d-flex justify-content-between mb-3">
+        <p class="card-title justify-content-center">Manage Client</p>
+        <div class="text-center">
+          <a href="Deleted_employees.html" class="button btn btn-danger p-3">
+            Deleted QR-Codes
+          </a>
+        </div>
+      </div>
       <section class="section">
         <div class="card">
           <div class="card-body">
-            <div class="col-lg">
-              <div class="d-flex justify-content-between mt-3">
-                <p class="card-title justify-content-center">Add User</p>
-                <div class="text-center">
-                  <a href="Manage_users.html" class="button btn btn-light p-2">
-                    <i class="bi bi-arrow-left me-3"></i>Back
-                  </a>
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="page_title_box d-flex flex-wrap align-items-center justify-content-between"
+                >
+                  <div class="page_title_left">
+                    <p class="card-title mt-2">QR-Code Listing</p>
+                  </div>
+                  <div class="page_title_right d-flex me-3 mb-3">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search"
+                        name="search"
+                      />
+                      <div class="input-group-btn">
+                        <button
+                          class="btn btn-light rounded-0 rounded-end"
+                          type="submit"
+                        >
+                          Search
+                        </button>
+                      </div>
+                      <div class="">
+                        <a
+                          href=""
+                          class="form-control btn btn-light rounded-end ms-3"
+                        >
+                          Reset</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <form action="">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput">First Name</label>
-                      <input
-                        class="form-control mt-3"
-                        type="text"
-                        placeholder=" "
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput">Last Name</label>
-                      <input
-                        class="form-control mt-3"
-                        type="text"
-                        placeholder=" "
-                      />
-                    </div>
-                  </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col">QR-Code</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Client</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td scope="row">
+                      <img src="aa.jpg" alt="" class="rounded" height="30" />
+                    </td>
+                    <td>Brandon Jacob</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>2016-05-25</td>
+                    <td>2016-05-25</td>
+                    <td>
+                      <a href="" class="btn btn btn-danger delete-btn mt-1"
+                        ><i class="bi bi-trash"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td scope="row">
+                      <img src="aa.jpg" alt="" class="rounded" height="30" />
+                    </td>
+                    <td>Bridie Kessler</td>
+                    <td>Developer</td>
+                    <td>35</td>
+                    <td>2014-12-05</td>
+                    <td>2016-05-25/td></td>
+
+                    <td>
+                      <a href="" class="btn btn btn-danger delete-btn mt-1"
+                        ><i class="bi bi-trash"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <p>Showing 1 to 10 out of 50 entries</p>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput"> Email</label>
-                      <input
-                        class="form-control mt-3"
-                        type="text"
-                        placeholder=" "
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Password</label>
-                      <input
-                        class="form-control mt-3"
-                        type="text"
-                        placeholder=" "
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2"
-                        >Confirm Password
-                      </label>
-                      <input type="text" class="form-control mt-3" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Contact Number</label>
-                      <input type="text" class="form-control mt-3" />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <p class="card-title mt-3">Company Details</p>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput2">Company Name</label>
-                      <input
-                        type="text"
-                        class="form-control w-100 mt-3"
-                        id="formGroupExampleInput2"
-                        placeholder=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">
-                        Address Line 1</label
-                      >
-                      <input
-                        type=""
-                        class="form-control w-100 mt-3"
-                        id="formGroupExampleInput2"
-                        placeholder=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Address Line 2</label>
-                      <input
-                        type=""
-                        class="form-control w-100 mt-3"
-                        id="formGroupExampleInput2"
-                        placeholder=""
-                        value=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">City/Town</label>
-                      <input type="text" class="form-control mt-2" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">City/Town</label>
-                      <input type="text" class="form-control mt-2" />
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-light mt-4 mb-5 p-2">
-                  Submit
-                </button>
-                <!-- End Table with hoverable rows -->
-              </form>
+              </div>
             </div>
           </div>
         </div>
